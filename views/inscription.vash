@@ -3,7 +3,7 @@
       <div class="col-lg-3 col-md-6">
           <div class="footer_links">
               <h3 class="text-dark">Inscription</h3>
-              <form action="index.html">
+              <form action="/users/inscription" method="post">
                   <fieldset>
                     <div class="field">
                         <input type="text" name="nom" placeholder="Votre nom" required="" />

@@ -3,6 +3,15 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+//var mongoose = require('mongoose');
+var MongoClient = require('mongodb').MongoClient;
+
+MongoClient.connect('mongodb://localhost:27017/blogBase', function (err, db) {
+  if (err) {
+    throw err;
+  }
+});
+//mongoose.connect('mongodb://localhost:27017/blogBase');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
